@@ -16,6 +16,9 @@
 body{
     overflow-x: hidden;
 }
+.foru-icon h4{
+    text-align: center;
+}
 /*navigation bar*/
 @media only screen and (min-width: 800px){
     .navbar{
