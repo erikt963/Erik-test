@@ -1,7 +1,17 @@
+@font-face {
+    font-family: "font-reg";
+    src: url(../assets/fonts/oswald.ttf);
+}
+@font-face {
+    font-family: "font-bold";
+    src: url(../assets/fonts/Oswald-Bold.ttf);
+}
 *{
     padding: 0;
     margin: 0;
     color: white;
+    font-family: font-reg;
+    box-sizing: border-box;
 }
 body{
     overflow-x: hidden;
@@ -58,7 +68,7 @@ body{
 }
 .first-section div p{
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-style: italic;
 }
 .icon-row{
@@ -246,4 +256,177 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons i{
+    font-size: 22px;
+    margin: 0 10px;
+}
+@media only screen and (min-width: 1024px){
+    .third-section {
+        padding: 2vh 6vw;
+    }
+    .icon-col img {
+        width: 30%;
+    }
+    .second-section{
+        padding: 2vh 6vw;
+    }
+    .large{
+        display: block;
+    }
+    .small{
+        display: none;
+    }
+    .foru-icon div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 75px;
+    }
+    .icon-row {
+        height: 70vh;
+    }
+    .icon-col h4{
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width: 768px){
+    .large{
+        display: none;
+    }
+    .small{
+        display: block;
+    }
+    /*first section*/
+    .first-section div p {
+        font-size: 1.3em;
+    }
+    /*second section*/
+    .icon-col img {
+        width: 20%;
+    }
+    .second-section{
+        margin: 5vh 0 !important;
+        padding: 0 4vw;
+    }
+    .icon-row{
+        height: 45vh;
+    }
+    .icon-col img {
+        width: 20%;
+    }
+    .icon-col h4{
+        font-size: 1.4em;
+    }
+    .icon-col p{
+        font-size: 1.1em;
+    }
+    /*thid section*/
+    .third-section{
+        margin: 10vh 0 5vh 0!important;
+        padding: 0 5vw;
+    }
+    .img-third-cont img{
+        width: 100%;
+    }
+    .para-third-cont h3{
+        margin-top: 0;
+    }
+    .icon-col {
+        margin-bottom: 3vh;
+    }
+    .fourth-section{
+        padding: 0 7vw;
+    }
+    .foru-icon div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 75px;
+    }
+    .foru-icon div img{
+        width: 50%;
+    }
+    /*sixth section*/
+    .sixth-section{
+        padding-top: 0;
+    }
+    .quot{
+        width: 15%;
+    }
+    /*seventh section*/
+    .seventh-section p{
+        font-size: 1.3em;
+    }
+    /*footer*/
+    .footer h4:nth-child(1){
+        margin: 3vh 0;
+    }
+}
+@media only screen and (max-width: 425px){
+    .first-section div{
+        width: 90%;
+        height: 70%;
+    }
+    .first-section div h1{
+        text-align: center;
+    }
+    /*second section*/
+    .second-section{
+        padding: 0 7vw;
+    }
+    /*third section*/
+    .img-third-cont:nth-child(1){
+        margin-bottom: 5vh;
+    }
+    .img-third-cont:nth-child(2){
+        margin-top: 5vh;
+    }
+    .third-section .row{
+        margin: 8vh 0;
+    }
+    .third-section{
+        margin: 0 !important;
+    }
+    /*fourth section*/
+    .fourth-section{
+        height: 85vh;
+        justify-content: space-evenly;
+        background-position: center;
+    }
+    .fourth-section h1{
+        font-size: 2.1em;
+    }
+    .cot-div:nth-child(2){
+        margin-top: 5vh;
+    }
+    /*seventh section*/
+    .seventh-section{
+        padding: 0 6vw;
+    }
+    .seventh-section h1{
+        font-size: 2.0em;
+        text-align: center;
+    }
+    /*footer*/
+    .footer{
+        padding: 0 7vw;
+    }
+    .footer h4{
+        text-align: center;
+    }
+    .footer h4:nth-child(2){
+        margin: 5vh 0;
+    }
+    .footer h4:nth-child(3){
+        margin-top: 0;
+    }
 }
