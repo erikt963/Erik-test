@@ -43,6 +43,12 @@ body{
     padding: 2vh 0;
     border: 0px black !important;
 }
+.navbar-brand{
+    color: white !important;
+}
+.navbar-nav li a{
+    color: white !important;
+}
 /*first section*/
 .first-section{
     width: 100vw;
@@ -65,6 +71,7 @@ body{
 }
 .first-section div h1{
     margin: 0;
+    text-shadow: -1px 1px #5e5e5e;
 }
 .first-section div p{
     text-align: center;
@@ -91,13 +98,12 @@ body{
     width: 50%;
 }
 .icon-col h4{
-    color: black;
-    font-weight: bold;
+    color: #232323;
     font-size: 1.7em;
     text-align: center;
 }
 .icon-col p{
-    color: black;
+    color: #232323;
     text-align: center;
 }
 .third-section{
@@ -107,7 +113,7 @@ body{
     width: 75%;
 }
 .para-third-cont h3, .para-third-cont p{
-    color: black;
+    color: #232323;
 }
 .img-third-cont:nth-child(2){
     display: flex;
@@ -130,6 +136,9 @@ body{
     padding: 0 15vh;
     background-attachment: fixed;
 }
+.fourth-section h1{
+    text-shadow: -1px 1px #5e5e5e;
+}
 .fourth-section button{
     padding: 10px 20px;
     color: white;
@@ -140,7 +149,7 @@ body{
 }
 .fourth-section button:hover{
     background-color: white;
-    color: black;
+    color: #232323;
 }
 /*fifth section*/
 .fifth-section{
@@ -155,7 +164,7 @@ body{
 
 }
 .foru-icon h4{
-    color: black;
+    color: #8A6B52;
 }
 .foru-icon img{
     width: 35%;
@@ -167,20 +176,20 @@ body{
     flex-direction: column;
 }
 .fifth-text h3{
-    color: black;
+    color: #232323;
 }
 .fifth-text p{
-    color: black;
+    color: #232323;
 }
 /*sixth section*/
 .sixth-section{
     padding: 7vh;
 }
 .sixth-section .row div h2{
-    color: black;
+    color: #232323;
 }
 .sixth-section .row div p{
-    color: black    ;
+    color: #232323 ;
 }
 .quot{
     width: 10%;
@@ -231,6 +240,7 @@ body{
 }
 .seventh-section h1{
     margin: 0;
+    text-shadow: -1px 1px #5e5e5e;
 }
 .seventh-section p{
     text-align: center;
@@ -245,13 +255,13 @@ body{
 }
 .seventh-section button:hover{
     background-color: white !important;
-    color: black;
+    color: #232323;
 }
 /*footer*/
 .footer{
     width: 100vw;
     height: 40vh;
-    background-color: rgb(65, 65, 65);
+    background-color: #222;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -268,14 +278,17 @@ body{
     margin: 0 10px;
 }
 @media only screen and (min-width: 1024px){
+    .navbar-brand{
+        font-size: 2.5em;
+    }
     .third-section {
-        padding: 2vh 6vw;
+        padding: 2vh 5vw;
     }
     .icon-col img {
         width: 30%;
     }
     .second-section{
-        padding: 2vh 6vw;
+        padding: 4vh 5vw;
     }
     .large{
         display: block;
@@ -291,13 +304,16 @@ body{
         height: 75px;
     }
     .icon-row {
-        height: 70vh;
+        height: 50vh;
     }
     .icon-col h4{
         font-size: 1.5em;
     }
 }
 @media only screen and (max-width: 768px){
+    .navbar-brand{
+        font-size: 2.2em;
+    }
     .large{
         display: none;
     }
@@ -372,12 +388,16 @@ body{
     }
 }
 @media only screen and (max-width: 425px){
+    .navbar-brand{
+        font-size: 2.0em;
+    }
     .first-section div{
         width: 90%;
         height: 70%;
     }
     .first-section div h1{
         text-align: center;
+        font-size: 2.1em;
     }
     /*second section*/
     .second-section{
@@ -422,6 +442,7 @@ body{
     }
     .footer h4{
         text-align: center;
+        font-size: 1.0em;
     }
     .footer h4:nth-child(2){
         margin: 5vh 0;
